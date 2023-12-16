@@ -172,12 +172,12 @@ export default {
     cssCode() {
       return `
 #gradient-canvas {
-  width:100%;
-  height:100%;
-  --gradient-color-1: ${this.color1}; 
-  --gradient-color-2: ${this.color2}; 
-  --gradient-color-3: ${this.color3};  
-  --gradient-color-4: ${this.color4};
+  width:100%
+  height:100%
+  --gradient-color-1: ${this.color1} 
+  --gradient-color-2: ${this.color2} 
+  --gradient-color-3: ${this.color3}  
+  --gradient-color-4: ${this.color4}
 }`;
     },
     htmlCode() {
