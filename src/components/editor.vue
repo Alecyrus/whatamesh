@@ -15,20 +15,20 @@
       </div>
       <div class="toolbar">
         <p>
-          <input @change="colorChange" type="color" v-model="color1" />
-          {{ color1 }}
+          <input type="color" v-model="color1" />
+          <input @change="colorChange" type="text" v-model="color1" />
         </p>
         <p>
-          <input @change="colorChange" type="color" v-model="color2" />
-          {{ color2 }}
+          <input type="color" v-model="color2" />
+          <input @change="colorChange" type="text" v-model="color2" />
         </p>
         <p>
-          <input @change="colorChange" type="color" v-model="color3" />
-          {{ color3 }}
+          <input type="color" v-model="color3" />
+          <input @change="colorChange" type="text" v-model="color3" />
         </p>
         <p>
-          <input @change="colorChange" type="color" v-model="color4" />
-          {{ color4 }}
+          <input type="color" v-model="color4" />
+          <input @change="colorChange" type="text" v-model="color4" />
         </p>
 
         <button @click="togglePlayPause">play / pause</button>
