@@ -31,10 +31,13 @@
           <input @change="colorChange" type="text" v-model="color4" />
         </p>
 
+       
+
         <button @click="togglePlayPause">play / pause</button>
         <button @click="toggleDarkenTop">toggle darken top</button>
         <button @click="refetch">randomize</button>
       </div>
+      
     </div>
     <div class="final-code">
       <h2>Installation</h2>
@@ -54,6 +57,11 @@
       <pre class="code">
         {{ htmlCode }}
       </pre>
+
+      <h2><i>JSON</i></h2>
+      <pre class="code">
+         {{ jsonCode }}
+        </pre>
       <h2><i>CSS</i></h2>
       <pre class="code">
         {{ cssCode }}
@@ -186,6 +194,14 @@ export default {
         "--gradient-color-4": this.color4,
       };
     },
+    jsonCode() {
+      return `
+{
+    id: 'palette',
+    type: 'dark',
+    colors: ['${this.color1}', '${this.color2}', '${this.color3}', '${this.color4}'],
+}`
+    }
   },
   mounted() {
     this.gradient.initGradient("#gradient-canvas");
